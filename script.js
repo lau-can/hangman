@@ -61,7 +61,8 @@ function checkLetter(id){
 	// Creates list of pushed buttons
 	clickedLetters.push(id.toUpperCase());
 	document.getElementById('clickedLetters').innerText = String(clickedLetters);
-	document.getElementById(id).style.color = 'red';
+	//document.getElementById(id).style.color = 'red';
+	document.getElementById(id).style.display = 'none';
 	// If letter guessed, we store it
 	if (country.indexOf(id) >= 0) {
 		if (guessedLetters.indexOf(id)<0){
